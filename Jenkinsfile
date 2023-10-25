@@ -22,7 +22,7 @@ pipeline {
         stage('Executar Testes') {
             steps {
                  nodejs('node'){
-                    bat 'npx cypress run'
+                    bat 'npm run wdio'
                 }
                         }
         }
